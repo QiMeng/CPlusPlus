@@ -19,6 +19,27 @@ class Foo {
 
 
 int main(int argc, const char * argv[]) {
+    
+    //输入两个数返回两个数范围内的每个数
+    cout << "输入两个整数" << endl;
+    int v1,v2;
+    cin >> v1 >> v2;
+    
+    int low, up;
+    
+    if (v1 > v2) {
+        low = v2;
+        up = v1;
+    }else {
+        
+        low = v1;
+        up = v2;
+    }
+    cout << "打印出两数之间的数" << endl;
+    for (int i = low ; i < up; ++i) {
+        cout << i << endl;
+    }
+    
 
 //    int i , &ri = i;
 //    i = 3;
@@ -64,10 +85,13 @@ int main(int argc, const char * argv[]) {
 //        cout << temp1 << "<" << temp2 << endl;
 //    }
     
-    
-    
-    
-    
+//    int amount = 0, value;
+//    
+//    while (cin >> value)
+//        if (value <= 0)
+//            ++amount;
+//    
+//    cout << "amount: " << amount << endl;
     
     
     
